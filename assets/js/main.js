@@ -17,7 +17,7 @@
   revealTargets.forEach(function (el) { observer.observe(el); });
 
   // ---------- Countdown ----------
-  var WEDDING_DATE = new Date("2026-10-05T00:00:00+09:00");
+  var WEDDING_DATE = new Date("2026-10-05T11:30:00+09:00");
   var elD = document.getElementById("cd-d");
   var elH = document.getElementById("cd-h");
   var elM = document.getElementById("cd-m");
