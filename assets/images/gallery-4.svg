@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#e9ded0"/>
+  <rect x="20" y="20" width="560" height="560" fill="none" stroke="#a9906f" stroke-width="2" stroke-dasharray="5 8"/>
+  <text x="300" y="290" font-family="Georgia, serif" font-size="26" fill="#8a7150" text-anchor="middle">Photo 4</text>
+  <text x="300" y="325" font-family="Georgia, serif" font-size="16" fill="#a9906f" text-anchor="middle">gallery-4.svg 교체</text>
+</svg>

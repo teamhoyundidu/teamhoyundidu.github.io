@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#eef1ea"/>
+  <g stroke="#cdd3c4" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  <circle cx="400" cy="250" r="14" fill="#c0392b"/>
+  <path d="M400 250 m0 -34 a34 34 0 1 1 -0.1 0 z" fill="none" stroke="#c0392b" stroke-width="3"/>
+  <text x="400" y="330" font-family="Georgia, serif" font-size="20" fill="#7a7f72" text-anchor="middle">지도 미리보기 (Map Placeholder)</text>
+  <text x="400" y="358" font-family="Georgia, serif" font-size="14" fill="#9aa090" text-anchor="middle">더채플앳논현 · 서울 강남구 논현로 549</text>
+</svg>
