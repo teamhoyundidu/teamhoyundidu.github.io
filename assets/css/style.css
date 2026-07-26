@@ -452,6 +452,16 @@ img { max-width: 100%; display: block; }
   padding: 14px;
   font-size: 13.5px;
 }
+.footer__paper-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--color-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 2px;
+}
+.footer__paper-link:active { color: var(--color-accent-dark); }
 
 /* ---------- Lightbox ---------- */
 .lightbox {
