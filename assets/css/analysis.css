@@ -9,6 +9,8 @@
   --muted: #6b6b6b;
   --accent: #7a1f2b;
   --accent-soft: #a8434f;
+  --cite: #2f6f52;
+  --xref: #1b4f8a;
   --table-line: #1a1a1a;
   --serif-kr: "Noto Serif KR", serif;
   --serif-en: "Source Serif 4", "Times New Roman", Times, serif;
@@ -40,7 +42,7 @@ html, body {
 .arxiv-bar a { color: #fff; text-decoration: underline; }
 
 .paper-shell {
-  max-width: 880px;
+  max-width: 740px;
   margin: 0 auto;
   padding: 26px 14px 90px;
 }
@@ -48,8 +50,14 @@ html, body {
 .paper {
   background: var(--paper-bg);
   box-shadow: 0 2px 24px rgba(0,0,0,0.18);
-  padding: 46px 40px 56px;
+  padding: 44px 46px 56px;
   position: relative;
+}
+
+.top-rule {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 34px;
 }
 
 .status-stamp {
@@ -77,118 +85,111 @@ html, body {
 }
 
 /* ---------- Header ---------- */
-.venue-line {
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  text-transform: uppercase;
-  margin-bottom: 22px;
-  font-family: var(--mono);
-}
-
 .paper-title-en {
   text-align: center;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 1.35;
-  margin: 0 0 8px;
-  letter-spacing: -0.01em;
+  line-height: 1.32;
+  margin: 0 0 10px;
+  letter-spacing: -0.005em;
 }
+.paper-title-en .small-caps { font-variant: small-caps; letter-spacing: 0.02em; }
 .paper-title-kr {
   text-align: center;
   font-family: var(--serif-kr);
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--muted);
-  margin: 0 0 26px;
+  margin: 0 0 28px;
 }
 
 .authors {
   text-align: center;
-  font-size: 15px;
-  margin-bottom: 4px;
+  font-size: 14.5px;
+  margin-bottom: 6px;
 }
 .authors .name { font-weight: 600; }
-.authors .star { color: var(--accent); }
+.authors .star { color: var(--ink); }
 .affil {
   text-align: center;
   font-size: 12px;
-  color: var(--muted);
-  font-style: italic;
-  margin-bottom: 26px;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
 }
-.equal-contrib {
+.emails {
   text-align: center;
+  font-family: var(--mono);
   font-size: 11px;
   color: var(--muted);
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
-.abstract-box {
-  border-top: 1.4px solid var(--rule);
-  border-bottom: 1.4px solid var(--rule);
-  padding: 18px 6px;
-  margin-bottom: 10px;
+.footnote-block {
+  border-top: 1px solid var(--rule);
+  width: 220px;
+  padding-top: 6px;
+  margin: 0 0 10px;
 }
-.abstract-box .label {
+.footnote-block p {
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0 0 3px;
+}
+
+.abstract-head {
+  text-align: center;
   font-weight: 700;
-  font-style: italic;
-  margin-right: 4px;
+  font-size: 13.5px;
+  margin: 8px 0 10px;
 }
-.abstract-box p { margin: 0; font-size: 13.5px; line-height: 1.75; text-align: justify; }
+.abstract-body {
+  font-size: 13px;
+  line-height: 1.75;
+  text-align: justify;
+  margin: 0 0 22px;
+}
 
 .keywords {
   font-size: 12.5px;
-  margin: 14px 0 36px;
+  margin: 0 0 34px;
   color: var(--ink-soft);
+  line-height: 1.6;
 }
-.keywords .label { font-weight: 700; font-style: italic; }
+.keywords .label { font-weight: 700; }
 
-/* ---------- Body / two-column ---------- */
+/* ---------- Body (single column, like the real NeurIPS template) ---------- */
 .paper-body {
-  column-count: 1;
-  column-gap: 34px;
   font-size: 13.5px;
   line-height: 1.78;
   text-align: justify;
 }
-@media (min-width: 720px) {
-  .paper-body { column-count: 2; }
-}
 
 .paper-body h2 {
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 700;
-  margin: 0 0 10px;
-  break-after: avoid;
-  break-inside: avoid;
+  margin: 26px 0 10px;
 }
 .paper-body h3 {
   font-size: 13.5px;
   font-weight: 700;
-  font-style: italic;
   margin: 18px 0 8px;
-  break-after: avoid;
 }
 .paper-body p { margin: 0 0 12px; }
 .paper-body .section { margin-bottom: 4px; }
+.lead-in { font-weight: 700; }
 
 .eqn {
   font-family: var(--mono);
-  font-size: 12.5px;
+  font-size: 13px;
   text-align: center;
-  margin: 14px 0;
-  padding: 10px 6px;
-  background: #f4f2ec;
-  border-left: 3px solid var(--accent);
-  break-inside: avoid;
+  margin: 16px 0;
+  padding: 4px 0;
 }
 .eqn-num { float: right; color: var(--muted); }
 
 .footnote {
   font-size: 11px;
   color: var(--muted);
-  break-inside: avoid;
 }
 
 blockquote.note {
@@ -199,13 +200,12 @@ blockquote.note {
   font-size: 12.5px;
   font-style: italic;
   color: var(--ink-soft);
-  break-inside: avoid;
 }
 
-/* ---------- Tables ---------- */
+/* ---------- Tables (booktabs style) ---------- */
 .table-wrap {
-  break-inside: avoid-column;
   margin: 6px 0 18px;
+  overflow-x: auto;
 }
 .table-caption {
   font-size: 12px;
@@ -221,18 +221,17 @@ table.academic caption { caption-side: top; text-align: left; }
 table.academic thead tr { border-top: 1.4px solid var(--table-line); border-bottom: 1px solid var(--table-line); }
 table.academic tbody tr:last-child { border-bottom: 1.4px solid var(--table-line); }
 table.academic th, table.academic td {
-  padding: 5px 6px;
+  padding: 5px 8px;
   text-align: left;
   vertical-align: top;
 }
-table.academic th { font-weight: 700; }
+table.academic th { font-weight: 700; font-variant: small-caps; letter-spacing: 0.02em; }
 table.academic td.num, table.academic th.num { text-align: right; font-family: var(--mono); }
 
 /* ---------- Reproducibility / event details ---------- */
 .repro {
-  break-inside: avoid-column;
   border: 1px solid var(--rule);
-  padding: 14px 14px 8px;
+  padding: 14px 16px 8px;
   margin: 6px 0 18px;
   background: #fbfaf7;
 }
@@ -287,31 +286,27 @@ table.academic td.num, table.academic th.num { text-align: right; font-family: v
 
 /* ---------- References ---------- */
 .references {
-  break-inside: avoid-column;
   font-size: 11.5px;
   line-height: 1.65;
   color: var(--ink-soft);
 }
-.references ol { margin: 0; padding-left: 18px; }
-.references li { margin-bottom: 6px; }
+.references ol { margin: 0; padding-left: 20px; }
+.references li { margin-bottom: 8px; padding-left: 2px; }
+.references em { font-style: italic; }
 
 .ack {
-  font-size: 12px;
-  font-style: italic;
+  font-size: 12.5px;
   color: var(--ink-soft);
-  break-inside: avoid-column;
 }
 
-/* ---------- Footer / nav ---------- */
+/* ---------- Footer ---------- */
 .paper-footer {
   margin-top: 40px;
-  padding-top: 16px;
+  padding-top: 10px;
   border-top: 1px solid var(--rule);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 
@@ -335,7 +330,24 @@ table.academic td.num, table.academic th.num { text-align: right; font-family: v
   font-family: var(--mono);
   font-size: 11px;
   color: var(--muted);
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
-sup.cite { color: var(--accent); font-weight: 600; }
+.cite, sup.cite {
+  color: var(--cite);
+  font-weight: 500;
+  vertical-align: baseline;
+  font-size: 1em;
+  top: 0;
+}
+.xref { color: var(--xref); text-decoration: none; }
+
+.url-box {
+  display: inline-block;
+  border: 1px solid #4a9d8f;
+  color: #1a6e5f;
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 1px 5px;
+  text-decoration: none;
+}
