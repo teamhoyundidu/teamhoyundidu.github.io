@@ -76,6 +76,9 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.1em;
   line-height: 1.7;
 }
+.cover__roles-name {
+  font-size: 14px;
+}
 .cover__photo {
   position: absolute;
   inset: 0;
