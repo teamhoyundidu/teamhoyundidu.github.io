@@ -9,9 +9,11 @@
   --color-accent-dark: #000000;
   --color-line: #d8d6d1;
   --max-width: 480px;
-  --serif: "Nanum Myeongjo", "Noto Serif KR", serif;
-  --display: "Playfair Display", "Nanum Myeongjo", serif;
-  --script: "Alex Brush", cursive;
+  /* "Custom …" comes first so assets/css/custom-fonts.css can override any of
+     these three roles just by defining that @font-face — see that file. */
+  --serif: "Custom Serif", "Nanum Myeongjo", "Noto Serif KR", serif;
+  --display: "Custom Display", "Playfair Display", "Nanum Myeongjo", serif;
+  --script: "Custom Script", "Alex Brush", cursive;
   --handwrite: "Gaegu", "Nanum Myeongjo", sans-serif;
 }
 

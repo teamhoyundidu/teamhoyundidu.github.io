@@ -1,0 +1,69 @@
+/*
+  CUSTOM FONTS — self-service, no other file needs to change.
+
+  There are 3 reserved slots below, matching the 3 roles used across the site:
+    1. Custom Script  — the English script/handwriting title look
+                         (cover "Our Wedding", footer "호윤 & 지수")
+    2. Custom Serif   — the main Korean body-text typeface (most of the page)
+    3. Custom Display — section eyebrows/titles, the calendar, English labels
+                         (CEREMONY, LOCATION, SAVE THE DATE, day names, ...)
+
+  HOW TO USE
+  ----------
+  1. Upload your font file(s) into assets/fonts/custom/ (via GitHub's
+     "Add file" → "Upload files"). .woff2 is smaller and preferred; .ttf/.otf
+     also work.
+  2. Uncomment ONE of the @font-face blocks below for the slot you want to
+     change, and fix the filename in the `src: url(...)` line to match what
+     you uploaded. Delete the format() line you don't need if you only have
+     one file type.
+  3. Save. That's it — style.css already lists "Custom Script" / "Custom
+     Serif" / "Custom Display" first, before the current fonts, so as soon as
+     a slot has a working @font-face it takes over automatically. Leave a
+     slot commented out (or just don't add one) and the site keeps using the
+     current font for that role, unchanged.
+
+  If you want extra weights (e.g. a separate bold file), just add another
+  @font-face block with the same font-family name and the matching
+  font-weight — same pattern as the examples below.
+*/
+
+/* ---------- 1. Custom Script (replaces Alex Brush) ---------- */
+/*
+@font-face {
+  font-family: "Custom Script";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/custom/your-script-font.woff2") format("woff2");
+}
+*/
+
+/* ---------- 2. Custom Serif (replaces Nanum Myeongjo) ---------- */
+/*
+@font-face {
+  font-family: "Custom Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/custom/your-serif-font-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Custom Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/custom/your-serif-font-bold.woff2") format("woff2");
+}
+*/
+
+/* ---------- 3. Custom Display (replaces Playfair Display) ---------- */
+/*
+@font-face {
+  font-family: "Custom Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/custom/your-display-font.woff2") format("woff2");
+}
+*/
