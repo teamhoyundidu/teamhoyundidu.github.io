@@ -67,3 +67,19 @@
   src: url("../fonts/custom/your-display-font.woff2") format("woff2");
 }
 */
+
+/* ---------- NanumSquareR ----------
+   Applied directly (via --nanum-square in style.css) to: the cover's
+   신부/신랑 role labels, the save-the-date band's date/venue lines, and
+   the Groom/Bride reveal block (role, name, parents) in the invite
+   section. Not one of the 3 generic slots above — this is a specific
+   font requested for those specific elements. The rest of the
+   NanumSquare weights (B/EB/L, plus the _ac variants) are also in
+   assets/fonts/custom/ if you want to wire up more of them later. */
+@font-face {
+  font-family: "NanumSquareR";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/custom/NanumSquareR.otf") format("opentype");
+}

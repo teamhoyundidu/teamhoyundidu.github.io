@@ -15,6 +15,7 @@
   --display: "Custom Display", "Playfair Display", "Nanum Myeongjo", serif;
   --script: "Custom Script", "Alex Brush", cursive;
   --handwrite: "Gaegu", "Nanum Myeongjo", sans-serif;
+  --nanum-square: "NanumSquareR", "Nanum Myeongjo", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -68,6 +69,7 @@ img { max-width: 100%; display: block; }
   gap: 90px;
   text-align: center;
   color: #fff;
+  font-family: var(--nanum-square);
   font-size: 12px;
   letter-spacing: 0.1em;
   line-height: 1.7;
@@ -138,13 +140,14 @@ img { max-width: 100%; display: block; }
   margin-bottom: 18px;
 }
 .savedate__date {
+  font-family: var(--nanum-square);
   font-size: 13px;
   letter-spacing: 0.04em;
   color: rgba(255,255,255,0.75);
   margin: 0 0 6px;
 }
 .savedate__venue {
-  font-family: var(--display);
+  font-family: var(--nanum-square);
   font-size: 12.5px;
   letter-spacing: 0.06em;
   color: rgba(255,255,255,0.55);
@@ -221,7 +224,7 @@ img { max-width: 100%; display: block; }
 }
 .invite__family { flex: 1; max-width: 160px; }
 .invite__role {
-  font-family: var(--display);
+  font-family: var(--nanum-square);
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.08em;
@@ -229,7 +232,7 @@ img { max-width: 100%; display: block; }
   color: #fff;
 }
 .invite__name {
-  font-family: var(--serif);
+  font-family: var(--nanum-square);
   font-size: 22px;
   font-weight: 700;
   margin: 0 0 8px;
@@ -237,6 +240,7 @@ img { max-width: 100%; display: block; }
   color: #fff;
 }
 .invite__parents {
+  font-family: var(--nanum-square);
   font-size: 12px;
   color: rgba(255,255,255,0.6);
   margin: 0;
