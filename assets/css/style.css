@@ -231,14 +231,14 @@ img { max-width: 100%; display: block; }
 .invite__role {
   font-family: var(--nanum-square);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.08em;
   margin: 0 0 6px;
   color: #fff;
 }
 .invite__name {
   font-family: var(--nanum-square);
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
   margin: 0 0 8px;
   letter-spacing: 0.15em;
@@ -246,7 +246,7 @@ img { max-width: 100%; display: block; }
 }
 .invite__parents {
   font-family: var(--nanum-square);
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(255,255,255,0.6);
   margin: 0;
   line-height: 1.6;
