@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>호윤 ♥ 지수 결혼합니다</title>
 <meta name="description" content="송호윤 · 신지수 결혼식에 초대합니다. 2026년 10월 5일 월요일 오전 11시 30분, 더채플앳논현 6층 라포레홀">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,21 +14,36 @@
 
   <!-- 1. Opening -->
   <section class="cover" id="cover">
+    <p class="cover__roles">
+      <span>신부<br>지수</span>
+      <span>신랑<br>호윤</span>
+    </p>
     <div class="cover__photo">
       <img src="assets/images/main.svg" alt="오프닝 사진">
     </div>
     <div class="cover__text">
-      <p class="cover__eyebrow">WEDDING INVITATION</p>
-      <h1 class="cover__names">송호윤 <span class="amp">&amp;</span> 신지수</h1>
-      <p class="cover__date">2026. 10. 05 MON</p>
+      <p class="cover__eyebrow">YOU'RE INVITED TO</p>
+      <h1 class="cover__script">Our Wedding</h1>
+      <p class="cover__date">2026.10.05 MON 11:30AM</p>
     </div>
   </section>
 
+  <!-- Save the date band -->
+  <div class="savedate">
+    <a class="pill" href="#ceremony">SAVE THE DATE</a>
+    <p class="savedate__date">2026년 10월 5일 월요일 오전 11시 30분</p>
+  </div>
+
   <!-- 2. Invitation message -->
   <section class="section invite" data-reveal>
-    <p class="section__eyebrow">INVITATION</p>
-    <h2 class="section__title">초대합니다</h2>
-    <p class="invite__lead">
+    <svg class="envelope" width="56" height="40" viewBox="0 0 64 46" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+      <rect x="1" y="1" width="62" height="44" rx="2"/>
+      <path d="M2 3 L32 28 L62 3"/>
+    </svg>
+
+    <p class="invite__verse">소중한 분들께<br>서로를 소개합니다.</p>
+
+    <p class="invite__story">
       <b>Best Team Ever.</b>
       <br><br>
       오래 고민한 끝에 저희가 결혼반지 안에 새긴 문구입니다.
@@ -44,15 +57,14 @@
 
     <div class="invite__families">
       <div class="invite__family">
+        <p class="invite__role">Groom</p>
+        <p class="invite__name">호윤</p>
         <p class="invite__parents">송재훈 · 박미희의 장남</p>
-        <p class="invite__name">호 윤</p>
-      </div>
-      <div class="invite__divider" aria-hidden="true">
-        <span></span><i>&amp;</i><span></span>
       </div>
       <div class="invite__family">
+        <p class="invite__role">Bride</p>
+        <p class="invite__name">지수</p>
         <p class="invite__parents">신동일 · 이은희의 차녀</p>
-        <p class="invite__name">지 수</p>
       </div>
     </div>
 
@@ -60,15 +72,9 @@
   </section>
 
   <!-- 3. Ceremony info -->
-  <section class="section ceremony" data-reveal>
+  <section class="section ceremony" id="ceremony" data-reveal>
     <p class="section__eyebrow">CEREMONY</p>
     <h2 class="section__title">예식 안내</h2>
-
-    <div class="ceremony__date-card">
-      <p class="ceremony__year">2026</p>
-      <p class="ceremony__day">10 . 05</p>
-      <p class="ceremony__weekday">Monday</p>
-    </div>
 
     <ul class="ceremony__detail">
       <li><span>일시</span><strong>2026년 10월 5일 월요일 오전 11시 30분</strong></li>
@@ -76,9 +82,10 @@
     </ul>
 
     <div class="mini-calendar">
-      <div class="mini-calendar__head">2026 . 10</div>
+      <p class="mini-calendar__date">2026.10.05 MON</p>
+      <p class="mini-calendar__time">11:30AM</p>
       <div class="mini-calendar__grid">
-        <span class="dow">일</span><span class="dow">월</span><span class="dow">화</span><span class="dow">수</span><span class="dow">목</span><span class="dow">금</span><span class="dow">토</span>
+        <span class="dow">SUN</span><span class="dow">MON</span><span class="dow">TUE</span><span class="dow">WED</span><span class="dow">THU</span><span class="dow">FRI</span><span class="dow">SAT</span>
         <i></i><i></i><i></i><i></i><i>1</i><i>2</i><i>3</i>
         <i>4</i><i class="is-day">5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i>
         <i>11</i><i>12</i><i>13</i><i>14</i><i>15</i><i>16</i><i>17</i>
@@ -97,19 +104,20 @@
 
   <!-- 4. Gallery -->
   <section class="section gallery" data-reveal>
+    <p class="gallery__handwrite">우리의 순간들</p>
     <p class="section__eyebrow">GALLERY</p>
     <h2 class="section__title">사진</h2>
     <div class="gallery__grid" id="galleryGrid">
-      <button type="button" class="gallery__item" data-index="0"><img src="assets/images/gallery-1.svg" alt="사진 1" loading="lazy"></button>
+      <button type="button" class="gallery__item gallery__item--tall" data-index="0"><img src="assets/images/gallery-1.svg" alt="사진 1" loading="lazy"></button>
       <button type="button" class="gallery__item" data-index="1"><img src="assets/images/gallery-2.svg" alt="사진 2" loading="lazy"></button>
       <button type="button" class="gallery__item" data-index="2"><img src="assets/images/gallery-3.svg" alt="사진 3" loading="lazy"></button>
       <button type="button" class="gallery__item" data-index="3"><img src="assets/images/gallery-4.svg" alt="사진 4" loading="lazy"></button>
-      <button type="button" class="gallery__item" data-index="4"><img src="assets/images/gallery-5.svg" alt="사진 5" loading="lazy"></button>
+      <button type="button" class="gallery__item gallery__item--wide" data-index="4"><img src="assets/images/gallery-5.svg" alt="사진 5" loading="lazy"></button>
       <button type="button" class="gallery__item" data-index="5"><img src="assets/images/gallery-6.svg" alt="사진 6" loading="lazy"></button>
     </div>
   </section>
 
-  <!-- 5. Location -->
+  <!-- 5. Location (design restyled only — content unchanged) -->
   <section class="section location" data-reveal>
     <p class="section__eyebrow">LOCATION</p>
     <h2 class="section__title">오시는 길</h2>
@@ -153,7 +161,7 @@
     </div>
   </section>
 
-  <!-- 6. Gift -->
+  <!-- 6. Gift (design restyled only — content unchanged) -->
   <section class="section gift" data-reveal>
     <p class="section__eyebrow">GIFT</p>
     <h2 class="section__title">마음 전하실 곳</h2>
@@ -233,7 +241,7 @@
 
   <!-- Footer -->
   <footer class="footer" data-reveal>
-    <p class="footer__names">송호윤 <span class="amp">&amp;</span> 신지수</p>
+    <p class="footer__names">호윤 <span class="amp">&amp;</span> 지수</p>
     <p class="footer__date">2026. 10. 05</p>
     <button type="button" class="btn btn--share" id="shareBtn">청첩장 링크 복사하기</button>
     <a class="footer__paper-link" href="analysis/">우리 커플에 대한 분석 논문 보러가기 →</a>

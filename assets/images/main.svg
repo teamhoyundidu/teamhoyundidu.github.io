@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#efe6da"/>
-      <stop offset="100%" stop-color="#d9c9b5"/>
+      <stop offset="0%" stop-color="#ededed"/>
+      <stop offset="100%" stop-color="#c9c9c9"/>
     </linearGradient>
   </defs>
   <rect width="900" height="1200" fill="url(#g)"/>
-  <rect x="40" y="40" width="820" height="1120" fill="none" stroke="#a9906f" stroke-width="2" stroke-dasharray="6 10"/>
-  <text x="450" y="580" font-family="Georgia, 'Nanum Myeongjo', serif" font-size="34" fill="#8a7150" text-anchor="middle">Opening Photo</text>
-  <text x="450" y="630" font-family="Georgia, 'Nanum Myeongjo', serif" font-size="22" fill="#a9906f" text-anchor="middle">여기에 두 분의 사진을 넣어주세요</text>
-  <text x="450" y="670" font-family="Georgia, serif" font-size="18" fill="#b9a888" text-anchor="middle">(main.svg 파일을 실제 사진으로 교체)</text>
+  <rect x="40" y="40" width="820" height="1120" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="6 10"/>
+  <text x="450" y="580" font-family="Georgia, 'Nanum Myeongjo', serif" font-size="34" fill="#4a4a4a" text-anchor="middle">Opening Photo</text>
+  <text x="450" y="630" font-family="Georgia, 'Nanum Myeongjo', serif" font-size="22" fill="#6a6a6a" text-anchor="middle">여기에 두 분의 사진을 넣어주세요</text>
+  <text x="450" y="670" font-family="Georgia, serif" font-size="18" fill="#8a8a8a" text-anchor="middle">(main.svg 파일을 실제 사진으로 교체)</text>
 </svg>

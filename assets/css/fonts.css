@@ -1,0 +1,60 @@
+/* Self-hosted, subsetted to only the glyphs used on this page (keeps things fast and
+   independent of any external font CDN). Re-generate via Google Fonts' css2 API with a
+   text= parameter if new characters are added to index.html. */
+
+@font-face {
+  font-family: "Gaegu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/gaegu-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Gaegu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/gaegu-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nanum Myeongjo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/nanummyeongjo-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nanum Myeongjo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/nanummyeongjo-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nanum Myeongjo";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/nanummyeongjo-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Alex Brush";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/alexbrush-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/playfairdisplay-italic-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfairdisplay-700.woff2") format("woff2");
+}
