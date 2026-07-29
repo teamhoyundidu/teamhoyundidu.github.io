@@ -8,6 +8,8 @@
   --color-accent: #1a1a1a;
   --color-accent-dark: #000000;
   --color-line: #d8d6d1;
+  --color-red: #c0392b;
+  --color-blue: #2a4d8f;
   --max-width: 480px;
   /* "Custom …" comes first so assets/css/custom-fonts.css can override any of
      these three roles just by defining that @font-face — see that file. */
@@ -205,7 +207,7 @@ img { max-width: 100%; display: block; }
 .invite__story-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 22px;
   letter-spacing: 0.02em;
   margin: 0 0 18px;
   color: #fff;
@@ -213,7 +215,7 @@ img { max-width: 100%; display: block; }
 .invite__story-img {
   display: block;
   width: 100%;
-  max-width: 320px;
+  max-width: 420px;
   margin: 0 auto 44px;
 }
 .invite__families {
@@ -233,7 +235,7 @@ img { max-width: 100%; display: block; }
 }
 .invite__name {
   font-family: var(--nanum-square);
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0 0 8px;
   letter-spacing: 0.15em;
@@ -317,6 +319,8 @@ img { max-width: 100%; display: block; }
   color: var(--color-text);
   font-size: 13px;
 }
+.mini-calendar__grid i.is-red { color: var(--color-red); }
+.mini-calendar__grid i.is-blue { color: var(--color-blue); }
 .mini-calendar__grid i.is-day {
   position: relative;
   z-index: 0;
@@ -330,7 +334,7 @@ img { max-width: 100%; display: block; }
   margin: auto;
   width: 25px;
   height: 25px;
-  background: var(--color-black);
+  background: var(--color-red);
   border-radius: 50%;
   z-index: -1;
   left: 0; right: 0;
@@ -342,8 +346,6 @@ img { max-width: 100%; display: block; }
   gap: 12px;
 }
 .countdown__item {
-  background: var(--color-ivory);
-  border: 1px solid var(--color-black);
   padding: 12px 4px;
   min-width: 62px;
 }
@@ -397,6 +399,11 @@ img { max-width: 100%; display: block; }
   font-family: var(--display);
   font-size: 17px;
   font-weight: 700;
+  margin: 0 0 6px;
+}
+.location__address {
+  font-size: 13.5px;
+  color: var(--color-muted);
   margin: 0 0 24px;
 }
 .map {
@@ -473,6 +480,12 @@ img { max-width: 100%; display: block; }
 }
 .info-block__body p { margin: 0 0 6px; }
 .info-block__body strong { color: var(--color-text); }
+.info-block__sub {
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--color-muted);
+  opacity: 0.85;
+}
 .info-block__en {
   font-size: 12px;
   font-style: italic;
@@ -511,7 +524,8 @@ img { max-width: 100%; display: block; }
 }
 .gift__flower {
   margin-top: 30px;
-  font-size: 12.5px;
+  font-size: 15px;
+  line-height: 1.8;
   color: var(--color-muted);
   text-align: center;
   padding-top: 20px;
