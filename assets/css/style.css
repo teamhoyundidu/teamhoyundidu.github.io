@@ -189,23 +189,16 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Invite ---------- */
 .invite { background: var(--color-black); color: #fff; border-bottom: none; }
-.envelope {
-  color: #fff;
-  margin: 0 auto 30px;
-  display: block;
-}
-.invite__verse {
-  font-family: var(--handwrite);
-  font-size: 26px;
-  line-height: 1.6;
+.invite__rings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin: 0 0 34px;
-  color: #fff;
 }
-.invite__verse--formal {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: 0.02em;
+.invite__rings img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 .invite__story-title {
   font-family: var(--display);
