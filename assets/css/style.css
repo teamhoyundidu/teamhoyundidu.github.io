@@ -197,8 +197,7 @@ img { max-width: 100%; display: block; }
 }
 .invite__rings img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
 }
 .invite__story-title {
   font-family: var(--display);
