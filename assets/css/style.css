@@ -204,14 +204,14 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 0.02em;
-  margin: 46px 0 30px;
+  margin: 70px 0 36px;
   color: #fff;
 }
 .invite__story-img {
   display: block;
   width: 100%;
   max-width: 380px;
-  margin: 0 auto 44px;
+  margin: 0 auto 50px;
 }
 .invite__families {
   display: flex;
@@ -223,7 +223,7 @@ img { max-width: 100%; display: block; }
 .invite__role {
   font-family: var(--nanum-square);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.08em;
   margin: 0 0 6px;
   color: #fff;
