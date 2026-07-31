@@ -138,9 +138,7 @@
 
     <p class="location__venue">서울특별시 강남구 논현로 549<br>더채플앳논현</p>
 
-    <div class="map" id="map">
-      <img class="map__img" alt="더채플앳논현 위치 지도" src="assets/images/map-placeholder.svg">
-    </div>
+    <div class="map" id="map"></div>
 
     <div class="map__buttons">
       <a class="btn btn--map" href="https://map.naver.com/p/search/%EB%8D%94%EC%B1%84%ED%94%8C%EC%95%B3%EB%85%BC%ED%98%84" target="_blank" rel="noopener">네이버 지도</a>
@@ -296,6 +294,17 @@
 
 <div class="toast" id="toast"></div>
 
+<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=41adgnh0id"></script>
+<script>
+  if (window.naver && naver.maps) {
+    var venuePosition = new naver.maps.LatLng(37.5051234767743, 127.034426154004);
+    var map = new naver.maps.Map('map', {
+      center: venuePosition,
+      zoom: 17
+    });
+    new naver.maps.Marker({ position: venuePosition, map: map });
+  }
+</script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
