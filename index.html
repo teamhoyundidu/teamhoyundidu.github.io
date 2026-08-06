@@ -136,7 +136,15 @@
     <p class="section__eyebrow">LOCATION</p>
     <h2 class="section__title">오시는 길</h2>
 
-    <p class="location__venue">서울특별시 강남구 논현로 549<br>더채플앳논현</p>
+    <div class="location__venue">
+      <p class="location__venue-address">
+        서울특별시 강남구 논현로 549
+        <button type="button" class="btn--copy btn--copy-inline" data-copy="서울특별시 강남구 논현로 549" data-copy-message="주소가 복사되었습니다" aria-label="주소 복사">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+      </p>
+      <p class="location__venue-name">더채플앳논현</p>
+    </div>
 
     <div class="map" id="map"></div>
 
@@ -153,8 +161,8 @@
           <span class="info-block__title">지하철로 오시는 길</span>
         </div>
         <div class="info-block__body">
-          <p><strong>9호선 언주역</strong> 7번 출구 도보 150m</p>
-          <p><strong>2호선 역삼역</strong> 6번 출구 도보 450m</p>
+          <p><strong class="line-9">9호선 언주역</strong> 7번 출구 도보 150m</p>
+          <p><strong class="line-2">2호선 역삼역</strong> 6번 출구 도보 450m</p>
         </div>
       </div>
 
@@ -205,30 +213,39 @@
       </summary>
       <div class="info-block__body">
         <div class="account">
-          <div class="account__info">
-            <span class="account__who">신랑 아버지 송재훈</span>
-            <span class="account__num">신한은행 110-010-468542</span>
-          </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="신한은행 110-010-468542">복사</button>
-          </div>
-        </div>
-        <div class="account">
-          <div class="account__info">
-            <span class="account__who">신랑 어머니 박미희</span>
-            <span class="account__num">카카오뱅크 3333-03-0887849</span>
-          </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="카카오뱅크 3333-03-0887849">복사</button>
+          <span class="account__who">신랑 아버지 송재훈</span>
+          <div class="account__row">
+            <span class="account__bank">신한은행</span>
+            <span class="account__num">110-010-468542</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="신한은행 110-010-468542" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
           </div>
         </div>
         <div class="account">
-          <div class="account__info">
-            <span class="account__who">신랑 송호윤</span>
-            <span class="account__num">국민은행 466402-01-322071</span>
+          <span class="account__who">신랑 어머니 박미희</span>
+          <div class="account__row">
+            <span class="account__bank">카카오뱅크</span>
+            <span class="account__num">3333-03-0887849</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="카카오뱅크 3333-03-0887849" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
           </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="국민은행 466402-01-322071">복사</button>
+        </div>
+        <div class="account">
+          <span class="account__who">신랑 송호윤</span>
+          <div class="account__row">
+            <span class="account__bank">국민은행</span>
+            <span class="account__num">466402-01-322071</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="국민은행 466402-01-322071" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -241,31 +258,40 @@
       </summary>
       <div class="info-block__body">
         <div class="account">
-          <div class="account__info">
-            <span class="account__who">신부 아버지 신동일</span>
-            <span class="account__num">국민은행 011240-20-0170</span>
-          </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="국민은행 011240-20-0170">복사</button>
-          </div>
-        </div>
-        <div class="account">
-          <div class="account__info">
-            <span class="account__who">신부 어머니 이은희</span>
-            <span class="account__num">하나은행 198-810064-74105</span>
-          </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="하나은행 198-810064-74105">복사</button>
+          <span class="account__who">신부 아버지 신동일</span>
+          <div class="account__row">
+            <span class="account__bank">국민은행</span>
+            <span class="account__num">011240-20-0170</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="국민은행 011240-20-0170" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
           </div>
         </div>
         <div class="account">
-          <div class="account__info">
-            <span class="account__who">신부 신지수</span>
-            <span class="account__num">카카오뱅크 3333-26-6645100</span>
+          <span class="account__who">신부 어머니 이은희</span>
+          <div class="account__row">
+            <span class="account__bank">하나은행</span>
+            <span class="account__num">198-810064-74105</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="하나은행 198-810064-74105" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
           </div>
-          <div class="account__actions">
-            <button type="button" class="btn btn--copy" data-copy="카카오뱅크 3333-26-6645100">복사</button>
-            <a class="btn btn--kakao" href="https://qr.kakaopay.com/Ej7kuWNEt" target="_blank" rel="noopener" aria-label="카카오페이로 송금하기"></a>
+        </div>
+        <div class="account">
+          <span class="account__who">신부 신지수</span>
+          <div class="account__row">
+            <span class="account__bank">카카오뱅크</span>
+            <span class="account__num">3333-26-6645100</span>
+            <div class="account__actions">
+              <button type="button" class="btn--copy btn--copy-icon" data-copy="카카오뱅크 3333-26-6645100" aria-label="계좌번호 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <a class="btn--kakao" href="https://qr.kakaopay.com/Ej7kuWNEt" target="_blank" rel="noopener" aria-label="카카오페이로 송금하기"></a>
+            </div>
           </div>
         </div>
       </div>

@@ -73,8 +73,9 @@
   document.querySelectorAll(".btn--copy").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var value = btn.getAttribute("data-copy") || "";
+      var message = btn.getAttribute("data-copy-message") || "계좌번호가 복사되었습니다";
       copyText(value).then(function () {
-        showToast("계좌번호가 복사되었습니다");
+        showToast(message);
       });
     });
   });
