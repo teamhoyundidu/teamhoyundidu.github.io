@@ -254,6 +254,46 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+/* ---------- Individual letters ---------- */
+.letters {
+  background: var(--color-bg);
+  padding-top: 0;
+}
+.letters__transition {
+  height: 90px;
+  margin: 0 -30px 40px;
+  background: linear-gradient(to bottom, var(--color-black), var(--color-bg));
+}
+.letters__block { margin: 0 0 40px; }
+.letters__block--last { margin-bottom: 0; }
+.letters__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.letters__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0 0 40px;
+}
+.letters__row-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.letters__block,
+.letters__row {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.letters__block.is-visible,
+.letters__row.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ---------- Ceremony ---------- */
 .ceremony { background: var(--color-offwhite); }
 
