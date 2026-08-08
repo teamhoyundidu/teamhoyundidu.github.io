@@ -312,6 +312,9 @@ img { max-width: 100%; display: block; }
     rgba(250, 250, 250, 0) 100%
   );
 }
+.letters__block--last .letters__fade {
+  margin-bottom: -120px;
+}
 .letters__photo--overlap {
   position: relative;
   z-index: 0;
