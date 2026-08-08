@@ -286,9 +286,9 @@ img { max-width: 100%; display: block; }
 .letters__text {
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 0) 100%);
-  padding: 29px 24px;
-  margin: 0 0 -29px;
+  background: var(--color-bg);
+  padding: 29px 24px 8px;
+  margin: 0;
   font-size: 14.5px;
   line-height: 2;
   color: var(--color-text);
@@ -297,6 +297,20 @@ img { max-width: 100%; display: block; }
 .letters__text p {
   margin: 0;
   word-break: keep-all;
+}
+.letters__fade {
+  position: relative;
+  z-index: 1;
+  height: 210px;
+  margin: 0 0 -210px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg) 0%,
+    rgba(250, 250, 250, 0.85) 22%,
+    rgba(250, 250, 250, 0.5) 50%,
+    rgba(250, 250, 250, 0.18) 78%,
+    rgba(250, 250, 250, 0) 100%
+  );
 }
 .letters__photo--overlap {
   position: relative;
