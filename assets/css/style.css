@@ -18,6 +18,8 @@
   --script: "Custom Script", "Alex Brush", cursive;
   --handwrite: "Gaegu", "Nanum Myeongjo", sans-serif;
   --nanum-square: "NanumSquareR", "Nanum Myeongjo", sans-serif;
+  --cinzel: "Cinzel", serif;
+  --montecarlo: "MonteCarlo", cursive;
 }
 
 * { box-sizing: border-box; }
@@ -111,14 +113,14 @@ img { max-width: 100%; display: block; }
   opacity: 0.9;
 }
 .cover__script {
-  font-family: var(--script);
+  font-family: var(--montecarlo);
   font-weight: 400;
   font-size: 68px;
   line-height: 1;
   margin: 0 0 18px;
 }
 .cover__date {
-  font-family: var(--display);
+  font-family: var(--cinzel);
   font-size: 14px;
   letter-spacing: 0.16em;
   margin: 0;
@@ -349,14 +351,14 @@ img { max-width: 100%; display: block; }
   background: var(--color-bg);
 }
 .mini-calendar__date {
-  font-family: var(--display);
+  font-family: var(--cinzel);
   font-size: 21px;
   font-weight: 700;
   letter-spacing: 0.02em;
   margin: 0 0 4px;
 }
 .mini-calendar__time {
-  font-family: var(--display);
+  font-family: var(--cinzel);
   font-style: normal;
   font-size: 14px;
   color: var(--color-text);
@@ -367,7 +369,7 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(7, 1fr);
   row-gap: 14px;
   font-size: 12px;
-  font-family: var(--display);
+  font-family: var(--cinzel);
 }
 .mini-calendar__grid .dow {
   color: var(--color-muted);
@@ -506,6 +508,7 @@ img { max-width: 100%; display: block; }
 .map__buttons .btn--map {
   padding-left: 4px;
   padding-right: 4px;
+  font-family: var(--nanum-square);
   font-size: 11.5px;
   letter-spacing: 0;
 }

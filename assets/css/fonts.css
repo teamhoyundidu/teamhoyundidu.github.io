@@ -58,3 +58,24 @@
   font-display: swap;
   src: url("../fonts/playfairdisplay-700.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/cinzel-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/cinzel-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MonteCarlo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/montecarlo-400.woff2") format("woff2");
+}
