@@ -344,7 +344,7 @@ img { max-width: 100%; display: block; }
   border: none;
   padding: 28px 20px 24px;
   margin-bottom: 30px;
-  background: var(--color-ivory);
+  background: var(--color-offwhite);
 }
 .mini-calendar__date {
   font-family: var(--display);
@@ -355,7 +355,7 @@ img { max-width: 100%; display: block; }
 }
 .mini-calendar__time {
   font-family: var(--display);
-  font-style: italic;
+  font-style: normal;
   font-size: 14px;
   color: var(--color-text);
   margin: 0 0 22px;
@@ -377,7 +377,7 @@ img { max-width: 100%; display: block; }
 .mini-calendar__grid i {
   font-style: normal;
   color: var(--color-text);
-  font-size: 13px;
+  font-size: 14px;
 }
 .mini-calendar__grid i.is-red { color: var(--color-red); }
 .mini-calendar__grid i.is-blue { color: var(--color-blue); }
