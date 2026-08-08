@@ -264,8 +264,7 @@ img { max-width: 100%; display: block; }
   margin: 0 -30px 40px;
   background: linear-gradient(to bottom, var(--color-black), var(--color-bg));
 }
-.letters__block { margin: 0 0 40px; }
-.letters__block--last { margin-bottom: 0; }
+.letters__block { margin: 0; }
 .letters__photo {
   display: block;
   width: 100%;
@@ -296,7 +295,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
-  margin: 0 0 40px;
+  margin: 0;
 }
 .letters__row-photo {
   width: 100%;
@@ -316,7 +315,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- Ceremony ---------- */
-.ceremony { background: var(--color-offwhite); }
+.ceremony { background: var(--color-bg); }
 
 .ceremony__detail {
   list-style: none;
@@ -344,7 +343,7 @@ img { max-width: 100%; display: block; }
   border: none;
   padding: 28px 20px 24px;
   margin-bottom: 30px;
-  background: var(--color-offwhite);
+  background: var(--color-bg);
 }
 .mini-calendar__date {
   font-family: var(--display);
@@ -422,7 +421,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- Gallery ---------- */
-.gallery { padding-left: 0; padding-right: 0; }
+.gallery { padding-left: 0; padding-right: 0; background: var(--color-bg); }
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -447,7 +446,7 @@ img { max-width: 100%; display: block; }
 .gallery__item:active img { transform: scale(1.05); }
 
 /* ---------- Location ---------- */
-.location { background: var(--color-offwhite); }
+.location { background: var(--color-bg); }
 .location .section__title { margin-bottom: 10px; }
 .location__venue {
   font-family: var(--display);
@@ -678,6 +677,11 @@ img { max-width: 100%; display: block; }
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.footer__transition {
+  height: 90px;
+  margin: -60px -30px 36px;
+  background: linear-gradient(to bottom, var(--color-bg), var(--color-black));
 }
 .footer__photos {
   display: grid;
