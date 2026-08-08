@@ -141,7 +141,9 @@ img { max-width: 100%; display: block; }
   font-size: 12px;
   letter-spacing: 0.22em;
   color: #fff;
+  background: none;
   text-decoration: none;
+  cursor: pointer;
   margin-bottom: 18px;
 }
 .savedate__date {

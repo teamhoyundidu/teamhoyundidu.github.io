@@ -1,6 +1,21 @@
 (function () {
   "use strict";
 
+  // ---------- Always open at the top ----------
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+  window.scrollTo(0, 0);
+
+  // ---------- Save the date scroll ----------
+  var saveDateBtn = document.getElementById("saveDateBtn");
+  if (saveDateBtn) {
+    saveDateBtn.addEventListener("click", function () {
+      var target = document.getElementById("ceremony");
+      if (target) target.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
   // ---------- Scroll reveal ----------
   var revealTargets = document.querySelectorAll("[data-reveal], .footer");
   var observer = new IntersectionObserver(
