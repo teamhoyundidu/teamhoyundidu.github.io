@@ -2,10 +2,16 @@
   "use strict";
 
   // ---------- Always open at the top ----------
+  if (location.hash) {
+    history.replaceState(null, "", location.pathname + location.search);
+  }
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
   }
   window.scrollTo(0, 0);
+  window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+  });
 
   // ---------- Save the date scroll ----------
   var saveDateBtn = document.getElementById("saveDateBtn");
