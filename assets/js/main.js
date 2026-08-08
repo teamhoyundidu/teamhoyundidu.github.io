@@ -80,21 +80,6 @@
     });
   });
 
-  // ---------- Share / copy link ----------
-  var shareBtn = document.getElementById("shareBtn");
-  if (shareBtn) {
-    shareBtn.addEventListener("click", function () {
-      var url = window.location.href;
-      if (navigator.share) {
-        navigator.share({ title: "호윤 ♥ 지수 결혼합니다", url: url }).catch(function () {});
-        return;
-      }
-      copyText(url).then(function () {
-        showToast("청첩장 링크가 복사되었습니다");
-      });
-    });
-  }
-
   // ---------- Gallery lightbox ----------
   var galleryImages = Array.prototype.map.call(
     document.querySelectorAll("#galleryGrid .gallery__item img"),
