@@ -681,7 +681,7 @@ img { max-width: 100%; display: block; }
 }
 .footer__photos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 4px;
   margin: 0 0 36px;
 }
