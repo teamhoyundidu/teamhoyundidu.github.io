@@ -51,6 +51,38 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
+/* ---------- Background music toggle ---------- */
+.music-toggle {
+  position: fixed;
+  top: 16px;
+  right: max(16px, calc((100vw - var(--max-width)) / 2 + 16px));
+  z-index: 50;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+.music-toggle svg {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+.music-toggle.is-playing svg {
+  opacity: 1;
+  animation: music-spin 3.5s linear infinite;
+}
+@keyframes music-spin {
+  to { transform: rotate(360deg); }
+}
+
 /* ---------- Cover ---------- */
 .cover {
   position: relative;

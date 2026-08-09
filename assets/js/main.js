@@ -13,6 +13,44 @@
     window.scrollTo(0, 0);
   });
 
+  // ---------- Background music ----------
+  var bgm = document.getElementById("bgm");
+  var musicToggle = document.getElementById("musicToggle");
+  var isPlaying = false;
+
+  function playMusic() {
+    document.removeEventListener("click", playMusic);
+    document.removeEventListener("touchstart", playMusic);
+    if (!bgm || isPlaying) return;
+    isPlaying = true;
+    if (musicToggle) musicToggle.classList.add("is-playing");
+    bgm.play().catch(function () {
+      isPlaying = false;
+      if (musicToggle) musicToggle.classList.remove("is-playing");
+    });
+  }
+
+  function pauseMusic() {
+    if (!bgm) return;
+    bgm.pause();
+    isPlaying = false;
+    if (musicToggle) musicToggle.classList.remove("is-playing");
+  }
+
+  if (musicToggle) {
+    musicToggle.addEventListener("click", function () {
+      if (isPlaying) {
+        pauseMusic();
+      } else {
+        playMusic();
+      }
+    });
+  }
+
+  playMusic();
+  document.addEventListener("click", playMusic, { once: true });
+  document.addEventListener("touchstart", playMusic, { once: true });
+
   // ---------- Save the date scroll ----------
   var saveDateBtn = document.getElementById("saveDateBtn");
   if (saveDateBtn) {
