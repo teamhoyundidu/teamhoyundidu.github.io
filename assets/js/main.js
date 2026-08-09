@@ -17,6 +17,7 @@
   var bgm = document.getElementById("bgm");
   var musicToggle = document.getElementById("musicToggle");
   var isPlaying = false;
+  if (bgm) bgm.volume = 0.8;
 
   function playMusic() {
     document.removeEventListener("click", playMusic);
