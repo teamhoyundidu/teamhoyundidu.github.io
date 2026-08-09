@@ -146,22 +146,26 @@
     function (img) { return img.getAttribute("src"); }
   );
   var lightbox = document.getElementById("lightbox");
-  var lightboxImg = document.getElementById("lightboxImg");
-  var currentIndex = 0;
+  var lightboxTrack = document.getElementById("lightboxTrack");
+
+  galleryImages.forEach(function (src) {
+    var slide = document.createElement("div");
+    slide.className = "lightbox__slide";
+    var img = document.createElement("img");
+    img.src = src;
+    img.alt = "";
+    slide.appendChild(img);
+    lightboxTrack.appendChild(slide);
+  });
 
   function openLightbox(index) {
-    currentIndex = index;
-    lightboxImg.src = galleryImages[currentIndex];
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
+    lightboxTrack.scrollLeft = index * lightboxTrack.clientWidth;
   }
   function closeLightbox() {
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
-  }
-  function showRelative(offset) {
-    currentIndex = (currentIndex + offset + galleryImages.length) % galleryImages.length;
-    lightboxImg.src = galleryImages[currentIndex];
   }
 
   document.querySelectorAll(".gallery__item").forEach(function (btn) {
@@ -170,15 +174,13 @@
     });
   });
   document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
-  document.getElementById("lightboxPrev").addEventListener("click", function () { showRelative(-1); });
-  document.getElementById("lightboxNext").addEventListener("click", function () { showRelative(1); });
   lightbox.addEventListener("click", function (e) {
     if (e.target === lightbox) closeLightbox();
   });
   document.addEventListener("keydown", function (e) {
     if (!lightbox.classList.contains("is-open")) return;
     if (e.key === "Escape") closeLightbox();
-    if (e.key === "ArrowLeft") showRelative(-1);
-    if (e.key === "ArrowRight") showRelative(1);
+    if (e.key === "ArrowLeft") lightboxTrack.scrollBy({ left: -lightboxTrack.clientWidth, behavior: "smooth" });
+    if (e.key === "ArrowRight") lightboxTrack.scrollBy({ left: lightboxTrack.clientWidth, behavior: "smooth" });
   });
 })();
