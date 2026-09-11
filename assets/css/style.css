@@ -401,6 +401,20 @@ img { max-width: 100%; display: block; }
 }
 .ceremony__detail strong { font-weight: 700; }
 
+.ceremony__notice {
+  list-style: none;
+  padding: 14px 16px;
+  margin: -12px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--color-muted);
+  background: var(--color-offwhite);
+}
+
 .mini-calendar {
   border: none;
   padding: 28px 20px 24px;
