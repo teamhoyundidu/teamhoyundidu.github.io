@@ -16,12 +16,12 @@
   // ---------- Layout switch (from 2026-10-01 KST) ----------
   var LAYOUT_SWITCH_DATE = new Date("2026-10-01T00:00:00+09:00");
   if (Date.now() >= LAYOUT_SWITCH_DATE.getTime()) {
-    var cover = document.getElementById("cover");
+    var savedate = document.querySelector(".savedate");
     var ceremony = document.getElementById("ceremony");
     var locationSection = document.getElementById("location");
-    if (cover && ceremony && locationSection) {
-      cover.insertAdjacentElement("afterend", locationSection);
-      cover.insertAdjacentElement("afterend", ceremony);
+    if (savedate && ceremony && locationSection) {
+      savedate.insertAdjacentElement("afterend", locationSection);
+      savedate.insertAdjacentElement("afterend", ceremony);
     }
   }
 
